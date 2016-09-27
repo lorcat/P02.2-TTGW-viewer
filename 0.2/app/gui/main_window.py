@@ -8,7 +8,6 @@ from app.gui.ui.ui_mainwindow import *
 from app.gui.gui_roi import RoiUpdater
 
 import numpy
-import cv2
 
 class MainWindow(QtGui.QMainWindow, Ui_MainWindow, Tester):
 
