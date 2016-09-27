@@ -335,8 +335,20 @@ class MainWindow(QtGui.QMainWindow, Ui_MainWindow, Tester):
         Disables certain graphic parameters for the image view
         :return:
         """
-        self.gv_main.ui.roiBtn.hide()
-        self.gv_main.ui.menuBtn.hide()
+        try:
+            self.gv_main.ui.roiBtn.hide()
+        except AttributeError:
+            self.error("Problem with pyqtgraph ImageView gui elements (roi)")
+
+        try:
+            self.gv_main.ui.menuBtn.hide()
+        except AttributeError:
+            self.error("Problem with pyqtgraph ImageView gui elements (menu)")
+
+        try:
+            self.gv_main.ui.normBtn.hide()
+        except AttributeError:
+            self.error("Problem with pyqtgraph ImageView gui elements (norm)")
 
     def trackImageViewMouse(self, view_pos):
         """
