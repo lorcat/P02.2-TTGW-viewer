@@ -1,0 +1,1 @@
+Report on beamposition; CENTER: 317:202;  FWHMX: 25; FWHMY: 31

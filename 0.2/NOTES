@@ -1,0 +1,8 @@
+C:\Python27\Lib\site-packages\pyqtgraph\graphicsItems\GradientEditorItem.py
+One can update gradients in the object from this file
+
+dependencies:
+pyqtgraph
+PyQt4
+numpy
+scipy

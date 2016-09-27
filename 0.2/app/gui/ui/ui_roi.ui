@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>88</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {background: #fff;}
+
+*[class~=&quot;QPushButton&quot;] {border:0px; padding: 5px; padding-left:10px; padding-right: 10px;}
+*[class~=&quot;QPushButton&quot;]:hover {background-color: #eee; color: #000;}
+*[class~=&quot;QPushButton&quot;]:pressed {background-color:#ecc}
+
+*[class~=&quot;QSpinBox&quot;] {border: 2px solid #ccc;}
+*[class~=&quot;QSpinBox&quot;]:hover {border: 2px solid #ecc;}
+
+*[class~=&quot;QSpinBox&quot;]::up-button {subcontrol-origin: border;
+    subcontrol-position: top right; 
+    width: 20px; 
+    border-image: url(:/buttons/images/spinup.png) 0.5;
+    border-width: 1px;}
+*[class~=&quot;QSpinBox&quot;]::up-button:pressed {background-color: #ecc;}
+*[class~=&quot;QSpinBox&quot;]::up-button:hover {background-color: #eee;}
+
+*[class~=&quot;QSpinBox&quot;]::down-button {subcontrol-origin: border;
+    subcontrol-position: bottom right; 
+    width: 20px; 
+    border-image: url(:/buttons/images/spindown.png) 0.5;
+    border-width: 1px;}
+*[class~=&quot;QSpinBox&quot;]::down-button:pressed {background-color: #ecc;}
+*[class~=&quot;QSpinBox&quot;]::down-button:hover {background-color: #eee;}
+
+*[class~=&quot;QGraphicsView&quot;]::down-button:hover {border: 0px solid #000;}
+
+*[class~=&quot;QLabel&quot;]#lbl_center {font-weight:bold; color: #a00;}
+*[class~=&quot;QLabel&quot;]#lbl_fwhmx {font-weight:bold; color: #a00;}
+*[class~=&quot;QLabel&quot;]#lbl_fwhmy {font-weight:bold; color: #a00;}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>ROI W:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>ROI X:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>ROI H:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>ROI Y:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QDoubleSpinBox" name="dsb_roih">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="suffix">
+         <string> px</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QDoubleSpinBox" name="dsb_roiw">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="suffix">
+         <string> px</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7" rowspan="2">
+       <widget class="QPushButton" name="btn_roiapply">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6" rowspan="2">
+       <widget class="QPushButton" name="btn_roisync">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Sync</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="dsb_roix">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="suffix">
+         <string> px</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="dsb_roiy">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="suffix">
+         <string> px</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>3000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>dsb_roiw</tabstop>
+  <tabstop>dsb_roih</tabstop>
+  <tabstop>btn_roisync</tabstop>
+  <tabstop>btn_roiapply</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
